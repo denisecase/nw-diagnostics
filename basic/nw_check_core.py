@@ -33,7 +33,7 @@ To learn more or contribute, see the repository and its documentation.
 ================================================================================
 """
 
-# Import from Python Standard Library
+# Python Standard Library
 
 import datetime
 import logging
@@ -64,17 +64,6 @@ user_home = os.path.expanduser("~")
 
 
 # Define program functions
-
-
-def check_core(fn):
-    """
-    Generates and prints debug information about the current system.
-
-    Args:
-    - fn (str): Path to the file for which the information should be generated.
-    """
-    debug_info = get_header(fn)
-    logging.info(debug_info)
 
 
 def get_terminal_info():
@@ -162,6 +151,17 @@ def get_header(fn):
 """
 
 
+def check_core(fn):
+    """
+    Generates and prints debug information about the local system.
+
+    Args:
+    - fn (str): Path to the file for which the information should be generated.
+    """
+    debug_info = get_header(fn)
+    logging.info(debug_info)
+
+
 def run_diagnostic_core(namespace=None):
     """Function to run the main diagnostic checks."""
     if namespace:
@@ -170,4 +170,3 @@ def run_diagnostic_core(namespace=None):
             check_core_func(__file__)
     else:
         check_core(__file__)
-
