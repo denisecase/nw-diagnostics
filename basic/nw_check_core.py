@@ -162,7 +162,12 @@ def get_header(fn):
 """
 
 
-def run_diagnostic_core():
+def run_diagnostic_core(namespace=None):
     """Function to run the main diagnostic checks."""
-    check_core(__file__)
+    if namespace:
+        check_core_func = namespace.get("check_core")
+        if callable(check_core_func):
+            check_core_func(__file__)
+    else:
+        check_core(__file__)
 
