@@ -1,3 +1,3 @@
 # nw-diagnostics
 
-> Utility files to help debug installations and virtual environments
+> Utility files to help debug installations and environments
