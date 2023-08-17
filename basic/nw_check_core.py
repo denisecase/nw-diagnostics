@@ -3,15 +3,15 @@
 https://github.com/denisecase/nw-diagnostics/
 ================================================================================
 
-ORIGIN:
-This module is part of the NW Diagnostics hosted on GitHub. 
-It's a centralized tool designed to aid instructors and students in 
-diagnosing and understanding their Python environment and system setup.
-
 PURPOSE:
 - Generate detailed information about the Python environment and system.
 - Help detect common setup issues before they become bigger problems.
-- Offer a standardized way to gather system info across multiple projects.
+- Offer a standardized way to gather info across multiple projects.
+
+ORIGIN:
+This module is part of the NW Diagnostics hosted on GitHub. 
+It's a centralized tool designed to aid instructors and students in 
+  diagnosing and understanding their Python environment and system setup.
 
 NOTES:
 This is a utility module. It's designed to be imported and its functions 
@@ -45,14 +45,13 @@ import sys
 # Setup logging
 
 OUTPUT_FILENAME = "00_check_core.txt"
-logging.basicConfig(level=logging.INFO,
-                    format='%(message)s',
-                    handlers=[
-                        logging.FileHandler(OUTPUT_FILENAME, mode='w'),
-                        logging.StreamHandler()
-                    ])
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(message)s",
+    handlers=[logging.FileHandler(OUTPUT_FILENAME, mode="w"), logging.StreamHandler()],
+)
 
-# Declare additional program constants 
+# Declare additional program constants
 
 DIVIDER = "=" * 70  # A string divider for cleaner output formatting
 
@@ -65,6 +64,7 @@ user_home = os.path.expanduser("~")
 
 
 # Define program functions
+
 
 def check_core(fn):
     """
@@ -161,13 +161,15 @@ def get_header(fn):
 {DIVIDER}
 """
 
-def run_diagnostic():
+
+def run_diagnostic_core():
     """Function to run the main diagnostic checks."""
     check_core(__file__)
+
 
 # ---------------------------------------------------------------------------
 # If this is the script we are running, then call some functions and execute code!
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    run_diagnostic()
+    run_diagnostic_core()
