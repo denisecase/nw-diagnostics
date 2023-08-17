@@ -49,7 +49,7 @@ import pika
 
 # Set up basic logging
 
-OUTPUT_FILENAME = "aboutrabbit.txt"
+OUTPUT_FILENAME = "00_report_rabbitmq.txt"
 logging.basicConfig(
     level=logging.INFO,
     format="%(message)s",

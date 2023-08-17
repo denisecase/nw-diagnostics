@@ -44,7 +44,7 @@ import sys
 
 # Setup logging
 
-OUTPUT_FILENAME = "00_check_core.txt"
+OUTPUT_FILENAME = "00_report_core.txt"
 logging.basicConfig(
     level=logging.INFO,
     format="%(message)s",

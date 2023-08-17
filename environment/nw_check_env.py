@@ -42,7 +42,7 @@ import sys
 
 # Setup logging
 
-OUTPUT_FILENAME = "00_check_env.txt"
+OUTPUT_FILENAME = "00_report_env.txt"
 logging.basicConfig(
     level=logging.INFO,
     format="%(message)s",
