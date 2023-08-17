@@ -166,10 +166,3 @@ def run_diagnostic_core():
     """Function to run the main diagnostic checks."""
     check_core(__file__)
 
-
-# ---------------------------------------------------------------------------
-# If this is the script we are running, then call some functions and execute code!
-# ---------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    run_diagnostic_core()

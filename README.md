@@ -8,16 +8,14 @@ The `nw-diagnostics-python` repository provides a set of diagnostic scripts and 
 
 ## Getting Started
 
-1. Navigate to the `local-examples` directory.
 2. Identify and copy the desired local example file (e.g., `00_check_core.py` for basic checks or `00_check_env.py` for environment checks) to your local repository.
-3. Run the copied diagnostic script in your terminal as instructed by the individual utility documentation in its associated directory (`basic`, `env`, or `external`).
+3. Run the copied script in your terminal.
 
 ## Directory Structure
 
 - `basic`: Contains scripts that check basic system configurations for Python.
 - `env`: Houses utilities to inspect Python's virtual environments and general settings.
 - `external`: Utilities that inspect third-party or external Python dependencies.
-- `local-examples`: Provides example files to copy and run on your machine. Each file calls its corresponding diagnostic utility from the directories above.
 
 ## Caution
 
