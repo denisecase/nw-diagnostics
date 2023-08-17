@@ -92,15 +92,20 @@ def execute_diagnostic(url, function_name):
         return False
 
     namespace = {}
-    exec(code, globals(), namespace)  
+    exec(code, globals(), namespace)
+
+    for key in list(namespace.keys()):
+        globals()[key] = namespace[key]
+
     run_diagnostic = namespace.get(function_name)
 
     if callable(run_diagnostic):
-        run_diagnostic()
+        run_diagnostic(namespace)
         return True
     else:
         print(f"ERROR: Failed to find {function_name} in {url}.")
         return False
+
 
 # ---------------------------------------------------------------------------
 # If this is the script we are running, then call some functions and execute code!
