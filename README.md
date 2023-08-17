@@ -1,2 +1,3 @@
-# python-diagnostics
-Utility files to help debug Python installations and virtual environments
+# nw-diagnostics
+
+> Utility files to help debug installations and virtual environments
