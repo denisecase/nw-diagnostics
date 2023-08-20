@@ -1,3 +1,7 @@
+# ================= INSTRUCTOR-GENERATED FILE ================
+# Source: https://github.com/denisecase/nw-diagnostics-python/
+# ============================================================
+#
 # ============================================================
 # Basic .gitignore for Python projects with VS Code 
 # This file helps specify which files should not be 
@@ -72,9 +76,9 @@ build/
 # Logs and databases can get large and are typically excluded.
 # For some projects, it may be useful to track these files.
 # Comment out lines as needed to include them.
-*.log
-*.sql
-*.sqlite
+# *.log
+# *.sql
+# *.sqlite
 
 # ============================================================
 # Node Modules
